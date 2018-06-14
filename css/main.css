@@ -1,23 +1,3 @@
-/*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
 /*! bulma.io v0.6.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -33,11 +13,8 @@ $primary-invert: $pink-invert;
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg); } }
-
-/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
-
 html,body {
-  font-family: 'Open Sans', serif;
+  font-family: "Roboto", sans-serif;
 }
 .hero.is-info {
   background: linear-gradient(
@@ -57,8 +34,15 @@ html,body {
   padding: 3rem 0;
   line-height: 1.5;
 }
-html,
-body,
+ .clipped {
+    background: url('https://unsplash.it/1200/900?random') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 p,
 ol,
 ul,
@@ -159,7 +143,7 @@ button,
 input,
 select,
 textarea {
-  font-family:"Sans-serif", sans-serif; }
+  font-family:"Roboto", sans-serif; }
 
 code,
 pre {
@@ -282,7 +266,7 @@ table th {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 3rem !important; }
+    font-size: 6rem !important; }
   .is-size-2-mobile {
     font-size: 2.5rem !important; }
   .is-size-3-mobile {
@@ -298,7 +282,7 @@ table th {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 3rem !important; }
+    font-size: 10rem !important; }
   .is-size-2-tablet {
     font-size: 2.5rem !important; }
   .is-size-3-tablet {
@@ -330,7 +314,7 @@ table th {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 3rem !important; }
+    font-size: 30rem !important; }
   .is-size-2-desktop {
     font-size: 2.5rem !important; }
   .is-size-3-desktop {
@@ -990,8 +974,8 @@ a.box:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 3em;
+  padding-right: 3em;
   text-align: center;
   white-space: nowrap; }
   .button:focus, .button.is-focused, .button:active, .button.is-active {
@@ -3437,7 +3421,7 @@ a.tag:hover {
   .title:not(.is-spaced) + .subtitle {
     margin-top: -1.5rem; }
   .title.is-1 {
-    font-size: 3rem; }
+    font-size: 30rem; }
   .title.is-2 {
     font-size: 2.5rem; }
   .title.is-3 {
@@ -4370,6 +4354,18 @@ a.dropdown-item {
   background-color: white;
   min-height: 3.25rem;
   position: relative; }
+
+  .navbar.is-fixed-bottom, .navbar.is-fixed-top {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+  }
+
+  .navbar.is-fixed-bottom {
+    bottom: 0;
+  }
+
   .navbar.is-white {
     background-color: white;
     color: #0a0a0a; }

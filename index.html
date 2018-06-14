@@ -9,41 +9,45 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <section class="hero is-info is-fullheight">
-  <div class="hero-head">
-      <nav id="navbar" class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item has-text-weight-bold" href="#">nadia nashirbanova</a>
-          <span class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#" class="navbar-item">Experience</a>
-            <a href="#Works" class="navbar-item">Projects</a>
-            <a href="#" class="navbar-item">Contacts</a></div>
-        </div>
-      </div>
-    </nav>
-  <script type="text/javascript"> (function() {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
-        burger.addEventListener('click', function(){
-        burger.classList.toggle('is-active');
-        nav.classList.toggle('is-active');});})();
-      </script></div>
+<nav id="navbar" class="navbar is-fixed-bottom">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold" href="#">nadia nashirbanova</a>
+      <span class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="#" class="navbar-item">Experience</a>
+        <a href="https://www.behance.net/itka" class="navbar-item">Projects</a>
+        <a href="#" class="navbar-item">Contacts</a></div>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript"> (function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');});})();
+  </script>
+  <section class="hero is-white is-fullheight">
   <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="column is-6 is-offset-3">
-          <h2 class="title is-6 is-uppercase">UI/UX designer from Siberia</h2>
-            <h1 class="title is-1 has-text-weight-bold">Nadia Nashirbanova</h1>
-              <a class="button is-medium is-white is-outlined" href="https://www.behance.net/itka">
-                <strong class="has-text-weight-semibold">Portfolio</strong>
-              </a>
+        <div class="column is-6">
+          <div class="container">
+    <h2 class="title is-2 has-text-weight-bold">I'm Nadia Nashirbanova</h2>
+    <p class="title is-6 is-uppercase has-text-weight-light">UI/UX designer from Siberia</p>
+    <div class="clipped">
+        <h1 class="title has-text-weight-bold is-size-1-desktop is-size-1-tablet is-size-1-mobile">Hello</h1>
+    </div>
+    <a class="button is-medium is-info is-outlined" href="https://www.behance.net/itka">
+    <strong class="has-text-weight-semibold">Portfolio</strong>
+    </a>
+</div>
           </div>
         </div>
       </div>
